@@ -5,11 +5,11 @@
         <referenceContainer name="main">
             <block name="ad0e702"
                    template="Denal05_Ad0e702ExerciseFrontendControllerMVVM::index.phtml">
-                <!--arguments>
-                    <argument name="welcome_viewmodel"
+                <arguments>
+                    <argument name="renderer_viewmodel"
                               xsi:type="object"
-                              >Denal05\Ad0e702ExerciseFrontendControllerMVVM\ViewModel\Welcome</argument>
-                </arguments-->
+                    >Denal05\Ad0e702ExerciseFrontendControllerMVVM\ViewModel\ProductRenderer</argument>
+                </arguments>
             </block>
         </referenceContainer>
     </body>
