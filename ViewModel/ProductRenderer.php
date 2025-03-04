@@ -20,7 +20,7 @@ class ProductRenderer implements ArgumentInterface
     public function getProduct(): ?ProductInterface
     {
         try {
-            $this->displayRequest->getProduct();
+            return $this->displayRequest->getProduct();
         } catch (NotFoundException $ex) {
             return null; // invalid product ID
         } catch (NoSuchEntityException $ex) {
