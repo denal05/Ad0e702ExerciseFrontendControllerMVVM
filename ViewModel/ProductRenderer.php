@@ -37,9 +37,9 @@ class ProductRenderer implements ArgumentInterface
                 $this->product = $this->productRepository->getById($id);
             }
             return $this->product;
-        } catch (NotFoundException $ex) {
+        } catch (NotFoundException $notFoundException) {
             return null; // invalid product ID
-        } catch (NoSuchEntityException $ex) {
+        } catch (NoSuchEntityException $noSuchEntityException) {
             return null; // no ID specified in request
         }
     }
