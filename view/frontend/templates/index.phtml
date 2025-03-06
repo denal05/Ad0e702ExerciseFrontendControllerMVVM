@@ -2,15 +2,15 @@
 /** @var Magento\Framework\Escaper $escaper */
 /** @var Magento\Framework\View\Element\Template $block */
 /** @var \Denal05\Ad0e702ExerciseFrontendControllerMVVM\ViewModel\ProductRenderer $rendererViewModel **/
-$rendererViewModel = $block->getData('renderer_viewmodel');
-$product = $rendererViewModel->getProduct();
+$productRendererViewModel = $block->getData('productRendererViewModel');
+$product = $productRendererViewModel->getProduct();
 ?>
 <h1><?= __("Welcome") ?></h1>
 <code><?= date("Y-m-d H:i:s") ?></code>
 
 <p>
 <?php if(!$product): ?>
-    <?= __('No product was found.') ?>
+    <?= __('No product was found. ¯\_(ツ)_/¯') ?>
 <?php else: ?>
     <?= $escaper->escapeHtml($product->getName()) ?>
 <?php endif; ?>
